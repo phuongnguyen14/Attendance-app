@@ -1,0 +1,44 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Định nghĩa các gradient -->
+  <defs>
+    <linearGradient id="overlay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:0.3" />
+    </linearGradient>
+    <linearGradient id="highlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:white;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:white;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background rounded square - màu xanh dương như trong hình -->
+  <rect x="2" y="2" width="28" height="28" rx="6" ry="6" fill="#2563EB"/>
+  
+  <!-- Subtle gradient overlay -->
+  <rect x="2" y="2" width="28" height="28" rx="6" ry="6" fill="url(#overlay)"/>
+  
+  <!-- Clock circle - màu trắng -->
+  <circle cx="16" cy="16" r="9" fill="white" fill-opacity="0.95"/>
+  
+  <!-- Clock border -->
+  <circle cx="16" cy="16" r="9" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="0.5"/>
+  
+  <!-- Clock marks (12, 3, 6, 9 positions) -->
+  <circle cx="16" cy="9" r="0.8" fill="#2563EB"/>
+  <circle cx="23" cy="16" r="0.8" fill="#2563EB"/>
+  <circle cx="16" cy="23" r="0.8" fill="#2563EB"/>
+  <circle cx="9" cy="16" r="0.8" fill="#2563EB"/>
+  
+  <!-- Clock hands showing 3 o'clock -->
+  <!-- Hour hand (shorter, pointing to 3) -->
+  <line x1="16" y1="16" x2="19" y2="16" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Minute hand (longer, pointing to 12) -->
+  <line x1="16" y1="16" x2="16" y2="10" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Center dot -->
+  <circle cx="16" cy="16" r="1.2" fill="#2563EB"/>
+  
+  <!-- Subtle highlight on top -->
+  <rect x="2" y="2" width="28" height="14" rx="6" ry="6" fill="url(#highlight)" opacity="0.1"/>
+</svg> 
